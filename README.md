@@ -1,9 +1,9 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Bruno Mugnol dos Santos
+- Lara Mamédio e Silva
+- Iuri Lami
 
 Link do Surge: www.link.com.br
 
