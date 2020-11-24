@@ -1,14 +1,10 @@
 import React from 'react';
-//import Home from './components/home/Home';
-//import Pokedex from './components/pokedex/Pokedex'
-import Detail from './components/detail/Detail'
+import Router from './routes/Router';
 
 class App extends React.Component {
   render () {
     return (
-      //<Home></Home>
-      //<Pokedex></Pokedex>
-      <Detail></Detail>
+      <Router></Router>
     )
   }
 }

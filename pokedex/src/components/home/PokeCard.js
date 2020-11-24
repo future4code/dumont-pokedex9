@@ -1,11 +1,17 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
+import { goDetailPage } from '../../routes/coordinator';
 
-export function PokeCard(props){
+const PokeCard = (props) => {
+    const history = useHistory()
+
     return (
         <div className="CardBox">
             <img src={props.image}/>
             <button className="add" type="submit">Adicionar</button>
-            <button className="detail" type="submit">Ver Detal.</button>
+            <button
+                onClick={() => goDetailPage(history)}            
+            className="detail" type="submit">Ver Detal.</button>
         </div>
     );
 }
