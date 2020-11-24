@@ -1,7 +1,7 @@
 import React from "react";
 
 import {PokeCard} from './PokeCard';
-import image1 from '';
+import image1 from './img/charmander.png';
 
 export default class Home extends React.Component{
     render () {
