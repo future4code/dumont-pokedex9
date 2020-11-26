@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import './Pokedex.css'
 import { goHomePage } from '../../routes/coordinator'
 import { useHistory } from "react-router-dom";
+import {GlobalStateContext} from '../../App'
 
 const Pokedex = () => {
     const history = useHistory()
+    const receivedData = useContext(GlobalStateContext)
+
+    useEffect(() => {
+        receivedData.getPokemonList()
+        console.log(receivedData)
+    }, [receivedData])
 
     return (
         <div>
