@@ -25,7 +25,6 @@ const App = () => {
 
   useEffect(() => {
     getPokemonList()
-    console.log("buscou os pokemons")
   }, [])
 
   const data = { pokemonList, setPokemonList, pokedex, setPokedex, getPokemonList }
