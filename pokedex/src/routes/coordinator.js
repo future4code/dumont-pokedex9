@@ -10,6 +10,6 @@ export const goPokedexPage = (history) => {
     history.push("/pokedex")
 }
 
-export const goDetailPage = (history) => {
-    history.push("/detalhes")
+export const goDetailPage = (history, name) => {
+    history.push(`/detalhes/${name}`)
 }

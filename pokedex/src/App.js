@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 import Router from './routes/Router';
@@ -10,13 +10,12 @@ export const GlobalStateContext = React.createContext();
 
 const App = () => {
   const [pokemonList, setPokemonList] = useState([])
-  const [pokedexList, setPokedexList] = useState([])
+  const [pokedex, setPokedex] = useState([])
 
   const getPokemonList = () => {
     axios.get(BASE_URL)
       .then(response => {
         setPokemonList(response.data.results)
-        console.log("dentro do then")
       })
       .catch(error => {
         console.log("Erro na requisição")
@@ -24,7 +23,12 @@ const App = () => {
       })
   }
 
-  const data = {pokemonList, setPokemonList, pokedexList, setPokedexList, getPokemonList}
+  useEffect(() => {
+    getPokemonList()
+    console.log("buscou os pokemons")
+  }, [])
+
+  const data = { pokemonList, setPokemonList, pokedex, setPokedex, getPokemonList }
 
   return (
     <GlobalStateContext.Provider value={data}>
