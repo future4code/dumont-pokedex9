@@ -1,0 +1,51 @@
+header {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+
+    height: 2.2rem;
+}
+
+header button {
+    height: 1.8rem;
+
+    font-size: 0.8rem;
+}
+
+header h1 {
+    margin-left: 21rem;
+
+    font-size: 1.8rem;
+}
+
+.CardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    margin: 0.4rem 3rem;
+}
+
+.CardBox {
+    background-color: rgb(235, 235, 235);
+
+    width: 15.2rem;
+   
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
+}
+
+.CardBox img {
+    height: 12rem;
+    width: 13.2rem;
+    margin: 0 1rem;
+}
+
+.CardBox button {
+    height: 2rem;
+    width: 7.6rem;
+
+    font-size: 1rem;
+}

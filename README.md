@@ -1,16 +1,14 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Bruno Mugnol dos Santos
+- Lara Mamédio e Silva
+- Iuri Lami
 
-Link do Surge: www.link.com.br
+Link do Surge: http://untidy-rose.surge.sh/
 
 O que funciona:
-- Item 1
-- Item 2
+- Todas funcionalidades básicas;
 
 O que não funciona: 
-- Item 3
-- Item 4
+- Desafios;
